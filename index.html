@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Clock App</title>
+</head>
+<body>
+  <div class="backdrop"></div>
+  <main>
+
+      <div class="quotes">
+        <p id="quote"></p>
+        <span class="quote_author" id="quote_author"></span>
+        <button id="refresh"><img src="./assets/desktop/icon-refresh.svg" alt="refresh "/></button>
+      </div>
+      <div class="clock_container">
+        <div class="clock_details">
+          <p class="greet">
+            <img src="" class="greet_image"/>
+          <span class="greeting_text">Good morning, </span> It's currently</p>
+          <h1><span class="currentTime"></span>    <span>
+              <span class="period"></span>    
+              <span class="abbreviation"></span>
+                
+            </span>
+        </h1>
+          <h2> <span class="region"></span></h2>
+        </div>
+        <button id="moreInfo">
+          <span class="text">More </span>
+           <span>
+            <img  src="./assets/desktop/icon-arrow-up.svg" class="arrow" alt="">
+          </span>
+        </button>
+      </div>
+
+  </main>
+  <div class="more_details">
+    <div class="details_container">
+      <div class="column">
+        <div class="details">
+          <h6 class="headings">Current timezone</h6>
+          <p class="subtitle detailed_location"></p>
+        </div>
+      <div class="details">
+        <h6 class="headings">Day of the year</h6>
+        <p class="subtitle day_of_the_year"></p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="details">
+        <h6 class="headings">day of the week</h6>
+        <p class="subtitle day_of_the_week"></p>
+      </div>
+      <div class="details">
+        <h6 class="headings">Week Number</h6>
+        <p class="subtitle week_number"></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
