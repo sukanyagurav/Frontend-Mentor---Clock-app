@@ -41,6 +41,8 @@ main{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+    gap: 5rem;
+    height: 100%;
 }
 main > div{
     width: 100%;
@@ -55,7 +57,7 @@ button{
     cursor: pointer;
 }
 .clock_container{
-    margin-top: 13rem;
+   
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
@@ -66,7 +68,7 @@ button{
     flex-wrap: wrap;
 }
 .currentTime{
-    font-size: 6rem;
+    font-size: 5rem;
    
 }
 .abbreviation,.period{
@@ -190,7 +192,7 @@ main.more{
 main.more ~ .more_details{
     position: absolute;
     height: 37vh;
-    bottom: -130px;
+    bottom: -220px;
     animation: animationUp 1s ease-in-out;
 }
 @keyframes animationUp {
@@ -204,7 +206,7 @@ main.more ~ .more_details{
 @keyframes animationDown {
 
     0%{
-        bottom: -130px;
+        bottom: -220px;
         clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
     }
     100%{
@@ -236,7 +238,7 @@ main.more ~ .more_details{
     }
   
     main.more ~ .more_details{
-         bottom: -200px;
+         bottom: -260px;
     }
     .details{
         display: flex;
