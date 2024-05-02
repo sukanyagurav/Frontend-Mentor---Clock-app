@@ -153,6 +153,9 @@ main.more{
     font-weight: 700;
     margin-top: 1rem;
 }
+body.nightTime .subtitle{
+    color: white;
+}
 .quotes{
     display: grid;
     grid-template-columns: 500px 50px;
