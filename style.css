@@ -251,5 +251,15 @@ main.more ~ .more_details{
     .subtitle{
         font-size: 1.2rem;
     }
-    
+    @keyframes animationDown {
+
+        0%{
+            bottom: -260px;
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+        }
+        100%{
+            bottom: 0;
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+        }
+    }
 }
