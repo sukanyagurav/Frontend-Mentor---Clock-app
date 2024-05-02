@@ -12,8 +12,8 @@ body.nightTime{
     background-image: url('./assets/desktop/bg-image-nighttime.jpg');
 }
 body{
-    height: 100%;
-    min-height: 100vh;
+    height: 100vh;
+  
     color: rgb(243, 238, 238);
     font-family: "Inter", sans-serif;
     background-size: cover;
@@ -34,7 +34,16 @@ body.nightTime .more_details{
 }
 main{
     padding: 1rem;
+    transform: translate(0);
+    transition: transform 0.5s ease-in-out;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+main > div{
+    width: 100%;
 }
 .quotes{
     margin-top: 2rem;
@@ -68,12 +77,17 @@ button{
     font-weight: 500;
     font-size: 1.2rem;
 }
-.clock_container button{
+.clock_container #moreInfo{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding:0.5rem 0.5rem 0.5rem 1rem;
     border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+   
+}
+#moreInfo:hover{
+    transform: scale(1.1);
 }
 .greet{
     display: flex;
@@ -81,7 +95,7 @@ button{
     gap: 0.5rem;
 
 }
-.clock_container button span:first-child{
+.clock_container  #moreInfo span:first-child{
     font-size: 1.1rem;
     margin-right: 0.5rem;
     display: block;
@@ -102,16 +116,11 @@ button{
     color: black;
     width: 100%;
     left: 0;
-  bottom: 0;
+     bottom: 0;
     pointer-events: none;
     animation: animationDown 1s ease-in-out forwards;
 }
 
-main{
-    transform: translate(0);
-    transition: transform 0.5s ease-in-out;
-
-}
 main.more{
     transform: translateY(-7%);
 }
@@ -130,7 +139,6 @@ main.more{
     text-transform: uppercase;
     gap: 1rem;
     padding: 2rem;
-
 }
 .headings{
     font-size: 0.8rem;
